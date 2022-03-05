@@ -1,0 +1,911 @@
+/target:library
+/out:Temp/Unity.ShaderGraph.Editor.dll
+/nowarn:0169
+/nowarn:0649
+/refout:Temp/Unity.ShaderGraph.Editor.dll.ref
+/deterministic
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:8.0
+/reference:Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll
+/reference:Library/ScriptAssemblies/Unity.Searcher.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:"T:/GameDev Projects/The Clown Forest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+/reference:"T:/GameDev Projects/The Clown Forest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+/reference:"T:/GameDev Projects/The Clown Forest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+/reference:"T:/GameDev Projects/The Clown Forest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll"
+/reference:"T:/GameDev Projects/The Clown Forest/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+/reference:"T:/GameDev Projects/The Clown Forest/Library/PackageCache/com.unity.render-pipelines.core@10.8.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll"
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEditor.Graphs.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIServiceModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.IO.Compression.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll
+/reference:T:/UnityProjetos/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll
+/define:CSHARP_7_3_OR_NEWER
+/define:CSHARP_7_OR_LATER
+/define:DEBUG
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_BURST_AOT
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_LZMA
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_UNITYTLS
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MONO
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_MOVIES
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_NETWORK
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_PHYSICS
+/define:ENABLE_PROFILER
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_UNET
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_VIDEO
+/define:ENABLE_VIRTUALTEXTURING
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_WWW
+/define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+/define:INCLUDE_DYNAMIC_GI
+/define:NET_4_6
+/define:PLATFORM_ARCH_64
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_SUPPORTS_MONO
+/define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+/define:RENDER_SOFTWARE_CURSOR
+/define:SCENE_TEMPLATE_MODULE
+/define:TRACE
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_2020
+/define:UNITY_2020_1_OR_NEWER
+/define:UNITY_2020_2_OR_NEWER
+/define:UNITY_2020_3
+/define:UNITY_2020_3_30
+/define:UNITY_2020_3_OR_NEWER
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_64
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:UNITY_INCLUDE_TESTS
+/define:UNITY_STANDALONE
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_TEAM_LICENSE
+/define:USE_SEARCH_ENGINE_API
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\AssemblyInfo.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\AssetCallbacks\CreateShaderGraph.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\AssetCallbacks\CreateShaderSubGraph.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\AssetCallbacks\CreateVFXShaderGraph.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Attributes\BuiltinKeywordAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Attributes\ContextFilterableAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Attributes\InspectableAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Attributes\NeverAllowedByTargetAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Attributes\SGPropertyDrawerAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Attributes\SRPFilterAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\ContextData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Enumerations\Precision.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\AbstractMaterialGraphAsset.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\AbstractShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\BitangentMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\BooleanMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\BooleanShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ColorMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ColorRGBMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ColorShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\CubemapInputMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\CubemapMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\CubemapShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\DynamicMatrixMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\DynamicValueMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\DynamicVectorMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GradientInputMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GradientMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GradientShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GraphConcretization.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GraphData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GraphDataUtils.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GraphSetup.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GraphValidation.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\GroupData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\IMaterialGraphAsset.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\IMaterialSlotHasValue.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\LightmappingShaderProperties.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Matrix2MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Matrix2ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Matrix3MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Matrix3ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Matrix4MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Matrix4ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\MatrixShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\MinimalGraphData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\NormalMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ParentGroupChange.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\PositionMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\PreviewMode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\PreviewProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SamplerStateMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SamplerStateShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ScreenPositionMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SerializableCubemap.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SerializableGuid.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SerializableMesh.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SerializableTexture.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SerializableTextureArray.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SerializableVirtualTexture.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ShaderGraphRequirements.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ShaderInput.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ShaderKeyword.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\SpaceMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\StickyNoteData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\TangentMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture2DArrayInputMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture2DArrayMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture2DArrayShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture2DInputMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture2DMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture2DShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture3DInputMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture3DMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Texture3DShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\TextureSamplerState.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\UVMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector1MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector1ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector2MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector2ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector3MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector3ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector4MaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\Vector4ShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\VectorShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\VertexColorMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\ViewDirectionMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\VirtualTextureInputMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\VirtualTextureMaterialSlot.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Graphs\VirtualTextureShaderProperty.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Implementation\Edge.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Implementation\GraphObject.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Implementation\HasDependenciesAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Implementation\IHasDependencies.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Implementation\NodeUtils.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Implementation\SlotType.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\GenerationMode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\Graph\DrawState.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\Graph\GraphDrawingData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\Graph\IEdge.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\Graph\INode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\Graph\IOnAssetEnabled.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\Graph\SlotReference.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\ICanChangeShaderGUI.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IGeneratesBodyCode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IGeneratesFunction.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IGroupItem.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IInspectable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireBitangent.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireCameraOpaqueTexture.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireDepthTexture.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireFaceSign.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireMeshUV.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireNormal.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequirePosition.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireScreenPosition.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireTangent.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireTime.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireVertexColor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireVertexID.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireVertexSkinning.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IMayRequireViewDirection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\IPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Interfaces\NeededCoordinateSpace.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\AbstractMaterialNode0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\Edge0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\GraphData0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\GroupData0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\ILegacyTarget.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\IMasterNode1.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\PBRMasterNode1.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\SerializableGuid.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\ShaderInput0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\SlotReference0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\SpriteLitMasterNode1.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\SpriteUnlitMasterNode1.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\StickyNoteData0.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\UnlitMasterNode1.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Legacy\VisualEffectMasterNode1.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\AbstractMaterialNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\ChannelMixerNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\ContrastNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\HueNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\InvertColorsNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\ReplaceColorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\SaturationNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Adjustment\WhiteBalanceNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Blend\BlendMode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Blend\BlendNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Filter\DitherNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Mask\ChannelMaskNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Mask\ColorMaskNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Normal\NormalBlendNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Normal\NormalFromHeightNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Normal\NormalFromTextureNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Normal\NormalReconstructZNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Normal\NormalStrengthNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Normal\NormalUnpackNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Artistic\Utility\ColorspaceConversion.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\BlockNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Channel\CombineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Channel\FlipNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Channel\SplitNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Channel\SwizzleNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\CodeFunctionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\FormerNameAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\FunctionMultiInput.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\GeometryNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\GuidEncoder.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\IPropertyFromNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\BooleanNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\ColorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\ConstantNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\IntegerNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\SliderNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\TimeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\Vector1Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\Vector2Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\Vector3Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Basic\Vector4Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\BitangentVectorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\NormalVectorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\PositionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\ScreenPositionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\TangentVectorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\UVNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\VertexColorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Geometry\ViewDirectionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Gradient\BlackbodyNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Gradient\GradientNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Gradient\SampleGradientNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Lighting\AmbientNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Lighting\BakedGINode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Lighting\ReflectionProbeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Matrix\Matrix2Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Matrix\Matrix3Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Matrix\Matrix4Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Matrix\TransformationMatrixNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\PBR\DielectricSpecularNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\PBR\MetalReflectanceNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\PropertyNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Scene\CameraNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Scene\FogNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Scene\ObjectNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Scene\SceneColorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Scene\SceneDepthNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Scene\ScreenNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\CubemapAssetNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\ProceduralVirtualTextureNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleCubemapNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleRawCubemapNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleTexture2DArrayNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleTexture2DLODNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleTexture2DNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleTexture3DNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SampleVirtualTextureNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\SamplerStateNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\TexelSizeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\Texture2DArrayAssetNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\Texture2DAssetNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\Texture3DAssetNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Input\Texture\TextureStackNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\LegacyUnknownTypeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\AbsoluteNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\ExponentialNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\LengthNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\LogNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\ModuloNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\NegateNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\NormalizeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\PosterizeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\ReciprocalNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Advanced\ReciprocalSquareRootNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Basic\AddNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Basic\DivideNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Basic\MultiplyNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Basic\PowerNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Basic\SquareRootNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Basic\SubtractNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Derivative\DDXNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Derivative\DDXYNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Derivative\DDYNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Interpolation\InverseLerpNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Interpolation\LerpNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Interpolation\SmoothstepNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Matrix\MatrixConstructionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Matrix\MatrixDeterminantNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Matrix\MatrixSplitNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Matrix\MatrixTransposeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\ClampNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\FractionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\MaximumNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\MinimumNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\OneMinusNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\RandomRangeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\RemapNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Range\SaturateNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Round\CeilingNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Round\FloorNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Round\RoundNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Round\SignNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Round\StepNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Round\TruncateNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\ArccosineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\ArcsineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\Arctangent2Node.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\ArctangentNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\CosineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\DegreesToRadiansNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicCosineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicSineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicTangentNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\RadiansToDegreesNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\SineNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Trigonometry\TangentNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\CrossProductNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\DistanceNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\DotProductNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\FresnelEffectNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\ProjectionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\ReflectionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\RejectionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\RotateAboutAxisNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\SphereMaskNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Vector\TransformNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Wave\NoiseSineWaveNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Wave\SawtoothWaveNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Wave\SquareWaveNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Math\Wave\TriangleWaveNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Mesh Deformation\ComputeDeformNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Mesh Deformation\LinearBlendSkinningNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\NodeClassCache.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\NormalMapSpace.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\CheckerboardNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Noise\GradientNoiseNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Noise\SimpleNoiseNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Noise\VoronoiNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Shape\EllipseNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Shape\PolygonNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Shape\RectangleNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Shape\RoundedPolygonNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Procedural\Shape\RoundedRectangleNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\RedirectNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\ShaderStage.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\SlotValue.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\TitleAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\FlipbookNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\ParallaxMappingNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\ParallaxOcclusionMappingNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\PolarCoordinatesNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\RadialShearNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\RotateNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\SpherizeNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\TilingAndOffsetNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\TriplanarNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\UV\TwirlNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\CustomFunctionNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\KeywordNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\AllNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\AndNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\AnyNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\BranchNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\ComparisonNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\IsFrontFaceNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\IsInfiniteNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\IsNanNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\NandNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\NotNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\Logic\OrNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\PreviewNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\RedirectNodeData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\RedirectNodeView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Nodes\Utility\SubGraphNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\SubGraph\SubGraphAsset.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\SubGraph\SubGraphOutputNode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\DictionaryPool.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\FunctionRegistry.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\GradientUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\GraphUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\Identifier.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\IndexSetPool.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\KeywordCollector.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\KeywordDependentCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\KeywordUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\ListPool.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\Logging.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\ObjectPool.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\PooledHashSet.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\PooledList.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\PooledObject.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\PrecisionUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\PropertyUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\QueuePool.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\ScreenSpaceType.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\SerializationHelper.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\ShaderGraphRequirementsPerKeyword.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\SlotValueTypeUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\StackPool.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\TextUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Data\Util\UvChannel.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\DefaultShaderIncludes.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Blackboard\BlackboardFieldView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Blackboard\BlackboardInputInfo.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Blackboard\BlackboardProvider.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Blackboard\SGBlackboard.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Blackboard\SGBlackboardSection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\CategoryColors.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\ColorManager.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\CustomColorData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\IColorProvider.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\NoColors.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\PrecisionColors.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Colors\UserColors.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ButtonControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ChannelEnumControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ChannelEnumMaskControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ChannelMixerControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ColorControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\CubemapControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\DefaultControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\DielectricSpecularControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\EnumControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\EnumConversionControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\GradientControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\IControlAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\IdentifierControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\IntegerControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ObjectControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\PopupControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\SliderControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\TextControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\Texture3DControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\TextureArrayControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\TextureControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\ToggleControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Controls\VectorControl.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\EdgeConnectorListener.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\INodeModificationListener.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\InspectorView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\MasterPreviewView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawerUtils.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\AbstractMaterialNodePropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\BoolPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\ColorPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\CubemapPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\CustomFunctionNodePropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\DropdownPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\EnumPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\FloatPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\GradientPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\GraphDataPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\IShaderPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\IntegerPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\MatrixPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\SampleVirtualTextureNodePropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\ShaderInputPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\SubGraphOutputNodePropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\TextPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\Texture2DArrayPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\Texture2DPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\Texture3DPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\ToggleDataPropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\Vector2PropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\Vector3PropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\PropertyDrawers\Vector4PropertyDrawer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\TabbedView\TabButton.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\TabbedView\TabbedView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Inspector\WindowDockingLayout.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Interfaces\IRectInterface.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Interfaces\IResizable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Manipulators\Draggable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Manipulators\ElementResizer.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Manipulators\ResizeBorderFrame.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Manipulators\ResizeSideHandle.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Manipulators\Scrollable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Manipulators\WindowDraggable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\MaterialGraphEditWindow.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\MaterialGraphPreviewGenerator.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\PreviewManager.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\SearchWindowAdapter.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\SearchWindowProvider.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\ContextView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\FloatField.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\GradientEdge.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\GraphEditorView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\GraphSubWindow.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\HelpBoxRow.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\HlslFunctionView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\IShaderNodeView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\IdentifierField.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\MaterialGraphView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\MaterialNodeView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\NodeSettingsView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\PortInputView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\PreviewSceneResources.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\PropertyNodeView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\PropertyRow.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\PropertySheet.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\ReorderableSlotListView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\ReorderableTextListView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\ResizableElement.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\ShaderGroup.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\ShaderPort.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\BooleanSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\ColorRGBSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\ColorSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\CubemapSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\GradientSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\LabelSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\MultiFloatSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\ScreenPositionSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\Texture3DSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\TextureArraySlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\TextureSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\Slots\UVSlotControlView.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Drawing\Views\StickyNote.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Extensions\FieldExtensions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Extensions\IConditionalExtensions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Extensions\StencilExtensions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Attributes\GenerateBlocksAttribute.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\AssetCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\DefineCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\DependencyCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\FieldCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\IncludeCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\KeywordCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\PassCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\PragmaCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\RenderStateCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Collections\StructCollection.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Contexts\TargetActiveBlockContext.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Contexts\TargetFieldContext.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Contexts\TargetPropertyGUIContext.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Contexts\TargetSetupContext.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Controls.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Data\ConditionalField.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Data\FieldCondition.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Data\FieldDependency.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Data\KeywordEntry.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\BlockFieldDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\FieldDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\IncludeDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\KeywordDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\PassDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\PragmaDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\RenderStateDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\StencilDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\StructDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Descriptors\SubShaderDescriptor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\Blend.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\BlendOp.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\Cull.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\IncludeLocation.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\InstancingOptions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\KeywordDefinition.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\KeywordScope.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\KeywordType.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\NormalDropOffSpace.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\Platform.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\PropertyType.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\RenderQueue.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\RenderType.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\ShaderModel.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\ShaderValueType.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\StructFieldOptions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\ZTest.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Enumerations\ZWrite.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\GraphCode.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\IHasMetaData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\OutputMetadata.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\ActiveFields.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\GenerationUtils.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\Generator.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\GraphCompilationResult.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\MatrixNames.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\PropertyCollector.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\ShaderGeneratorNames.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\ShaderSpliceUtil.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Processors\ShaderStringBuilder.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\ShaderGraphVfxAsset.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\SubTarget.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Target.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\TargetResources\BlockFields.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\TargetResources\FieldDependencies.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\TargetResources\Fields.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\TargetResources\StructFields.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\TargetResources\Structs.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Targets\PreviewTarget.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Targets\VFXTarget.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Generation\Utils\TargetUtils.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderGraphAssetPostProcessor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderGraphImporter.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderGraphImporterEditor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderGraphMetadata.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderSubGraphImporter.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderSubGraphImporterEditor.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Importers\ShaderSubGraphMetadata.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Interface\IConditional.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Interface\IShaderString.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\FakeJsonObject.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\JsonData.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\JsonObject.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\JsonRef.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\MultiJson.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\MultiJsonEntry.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\MultiJsonInternal.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\RefDataEnumerable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\RefValueEnumerable.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Serialization\SerializationExtensions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\ShaderGUI\PBRMasterGUI.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\ShaderGraphAnalytics.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\ShaderGraphPreferences.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\CompatibilityExtensions.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\CopyPasteGraph.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\CreateSerializableGraph.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\Documentation.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\FileUtilities.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\IndexSet.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\ListUtilities.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\MessageManager.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\TypeMapper.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\TypeMapping.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\UIUtilities.cs"
+"T:\GameDev Projects\The Clown Forest\Library\PackageCache\com.unity.shadergraph@10.8.1\Editor\Util\ValueUtilities.cs"
